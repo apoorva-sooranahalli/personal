@@ -7,13 +7,13 @@
   <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://apoorva-sooranahalli.github.io/personal/" />
-  <meta property="og:title" content="Apoorva Sooranahalli, PMP · Strategic Operator &amp; Builder" />
-  <meta property="og:description" content="Biotech &amp; MedTech Program Manager. Strategic operator, inquisitive explorer, builder." />
+  <meta property="og:title" content="Apoorva Sooranahalli, PMP · COO at DeNovoLabs" />
+  <meta property="og:description" content="COO at DeNovoLabs, designing enzymes for the chemistry nature never solved. Eight years launching biotech and med device products. Open to roles, partnerships, and speaking." />
   <meta property="og:image" content="https://apoorva-sooranahalli.github.io/personal/og-image.jpg" />
   <!-- Twitter/X card (also used by some link scrapers) -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Apoorva Sooranahalli, PMP" />
-  <meta name="twitter:description" content="Biotech &amp; MedTech Program Manager. Strategic operator, inquisitive explorer, builder." />
+  <meta name="twitter:description" content="COO at DeNovoLabs, designing enzymes for the chemistry nature never solved. Eight years launching biotech and med device products. Open to roles, partnerships, and speaking." />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -313,7 +313,7 @@
 
     /* timeline */
     .timeline {
-      display: grid; grid-template-columns: repeat(4,1fr);
+      display: grid; grid-template-columns: repeat(5,1fr);
       border: 1px solid var(--border);
       margin-top: 3rem;
     }
@@ -562,6 +562,55 @@
     }
     .cc-cta:hover { opacity: 0.85; transform: translateY(-2px); }
 
+    /* three doors */
+    .cc-lanes {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem; text-align: left; margin-bottom: 3rem;
+    }
+    .lane {
+      border: 1px solid var(--border); background: var(--ghost);
+      padding: 1.9rem 1.6rem;
+      display: flex; flex-direction: column;
+      transition: border-color 0.25s;
+    }
+    .lane:hover { border-color: rgba(0,180,255,0.28); }
+    .lane-num {
+      font-size: 0.62rem; letter-spacing: 0.35em;
+      text-transform: uppercase; color: var(--dim);
+      margin-bottom: 0.9rem;
+    }
+    .lane-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .lane-title.b { color: var(--blue); }
+    .lane-title.v { color: var(--violet); }
+    .lane-title.r { color: var(--red-soft); }
+    .lane-desc {
+      font-size: 0.82rem; color: var(--dim);
+      line-height: 1.7; margin-bottom: 1.2rem;
+    }
+    .lane-list { list-style: none; margin-bottom: 1.5rem; }
+    .lane-list li {
+      font-size: 0.78rem; color: var(--dim); line-height: 1.55;
+      position: relative; padding-left: 1rem; margin-bottom: 0.5rem;
+    }
+    .lane-list li::before {
+      content: '2'; position: absolute; left: 0; color: var(--purple);
+    }
+    .lane-cta {
+      margin-top: auto; align-self: flex-start;
+      font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--blue); text-decoration: none;
+      border-bottom: 1px solid rgba(0,180,255,0.3);
+      padding-bottom: 0.25rem;
+      transition: color 0.25s, border-color 0.25s;
+    }
+    .lane-cta:hover { color: var(--white); border-color: var(--white); }
+    .lane-sub {
+      font-size: 0.7rem; color: var(--dim);
+      margin-top: 0.85rem; line-height: 1.5;
+    }
+    .lane-sub a { color: var(--violet); text-decoration: none; }
+    .lane-sub a:hover { color: var(--white); }
+
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
        CONNECT
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -677,8 +726,7 @@
       .panel:nth-child(3n) { border-right: 1px solid rgba(240,240,255,0.07); }
       .panel:nth-child(2n) { border-right: none; }
       .timeline { grid-template-columns: 1fr 1fr; }
-      .tl-item:nth-child(2) { border-right: none; }
-      .tl-item:nth-child(3) { border-right: 1px solid var(--border); }
+      .tl-item:nth-child(2n) { border-right: none; }
 
       /* Build */
       #build { padding: 6rem 1.5rem; }
@@ -698,6 +746,7 @@
       .mosaic-cell.tall { grid-row: span 2; }
 
       /* Co-Create */
+      .cc-lanes { grid-template-columns: 1fr; }
       #co-create { padding: 7rem 1.5rem; }
       .cc-box { grid-template-columns: 1fr; }
       .cc-box-title { grid-column: span 1; }
@@ -802,6 +851,7 @@
   <p class="mc-en">that which has never existed before</p>
   <p class="mc-name">Apoorva Sooranahalli, PMP</p>
   <div class="mc-tags">
+    <span class="mc-tag b">COO · DeNovoLabs</span>
     <span class="mc-tag b">Strategic Operator</span>
     <span class="mc-tag v">Inquisitive Explorer</span>
     <span class="mc-tag r">Builder</span>
@@ -832,15 +882,22 @@
     <h2 class="section-title">Operator.<br>Explorer.<br>Builder.</h2>
     <p class="about-text">
       I started as a <strong>biomedical engineer</strong> who wanted to understand how things
-      worked at the smallest scale. Eight years later I'm a senior PM running complex programs
+      worked at the smallest scale. Eight years later I run operations and complex programs
       in regulated environments. Product launches from lab to $6M commercial, M&A integrations,
       FDA submissions, DARPA milestones. I still haven't stopped asking questions.
     </p>
     <p class="about-text">
-      Right now I'm in <strong>Da Nang, Vietnam</strong>. Two people out of Network School
-      started a pop-up city here, and I'm building in it alongside friends from that community.
-      Most of my hours go to <strong>Great Takes</strong>. The rest go to 48-hour build
-      challenges, and to posting about the work for the first time.
+      These days I'm <strong>COO at DeNovoLabs</strong>, a Luxembourg company designing enzymes
+      that don't exist in nature. The first target is PFAS, the forever chemicals nothing alive
+      knows how to break. I run operations, hiring, partnerships and go-to-market while the
+      science moves through wet-lab validation. It's an early-stage seat, and I've kept room in
+      the week around it on purpose.
+    </p>
+    <p class="about-text">
+      I'm writing this from <strong>Hoi An, Vietnam</strong>, after a stretch at the Network School
+      pop-up city in Da Nang. Where I land in October is still open. The hours that aren't
+      DeNovoLabs go to <strong>Great Takes</strong>, 48-hour build challenges, and posting about
+      the work for the first time.
       The same instinct that sent me to China at 19 is still running the show.
     </p>
     <blockquote class="about-quote">
@@ -857,10 +914,18 @@
       </div>
       <div class="ag-cell">
         <p class="ag-label">Currently</p>
-        <p class="ag-val blue">Da Nang, VN 🇻🇳</p>
+        <p class="ag-val blue">COO · DeNovoLabs</p>
+      </div>
+      <div class="ag-cell">
+        <p class="ag-label">Based</p>
+        <p class="ag-val">Hoi An, VN 🇻🇳 · through September</p>
       </div>
       <div class="ag-cell">
         <p class="ag-label">Open to</p>
+        <p class="ag-val blue">Full-time · Fractional · Advisory · Project</p>
+      </div>
+      <div class="ag-cell">
+        <p class="ag-label">Would move for</p>
         <p class="ag-val">SF · Chicago · London · SGP · Tokyo · Remote</p>
       </div>
     </div>
@@ -924,6 +989,12 @@
 
     <div class="timeline reveal">
       <div class="tl-item">
+        <div class="tl-dot" style="background:var(--blue)"></div>
+        <p class="tl-co">DeNovoLabs</p>
+        <p class="tl-role">Chief Operating Officer</p>
+        <p class="tl-dates">2026 – Present</p>
+      </div>
+      <div class="tl-item">
         <div class="tl-dot" style="background:var(--violet)"></div>
         <p class="tl-co">Standard BioTools</p>
         <p class="tl-role">Senior Project Manager</p>
@@ -961,10 +1032,36 @@
 
     <div class="ns-live reveal">
       <span class="live-dot"></span>
-      Currently building @ a Network School pop-up city · Da Nang, Vietnam
+      COO at DeNovoLabs · building from Hoi An, Vietnam
     </div>
 
     <div class="build-grid reveal">
+
+      <div class="proj-card feature">
+        <p class="proj-tag">Current Role · Wet-Lab Validation</p>
+        <h3 class="proj-name">DeNovoLabs</h3>
+        <p class="proj-lede">Designing enzymes for the chemistry nature never had to solve.</p>
+        <p class="proj-desc">
+          PFAS are built on carbon–fluorine bonds, among the strongest in organic
+          chemistry, and evolution never built an enzyme to break one. DeNovoLabs designs the
+          protein and the metal cofactor together to make that reaction happen. The
+          computational proof-of-concept is done and the first designs are in the wet lab now.
+          I'm the COO: operations, hiring, partnership ops, and go-to-market, so the science
+          has a company around it. We're a four-person founding team out of Luxembourg and a
+          member of NVIDIA Inception.
+        </p>
+        <div class="proj-link-row">
+          <a href="https://denovolabs.eu/" class="proj-link" target="_blank" rel="noopener">
+            denovolabs.eu &nbsp;→
+          </a>
+          <a href="https://www.linkedin.com/company/denovolabs/" class="proj-link alt" target="_blank" rel="noopener">
+            Company on LinkedIn &nbsp;→
+          </a>
+          <a href="https://x.com/DeNovoLabs" class="proj-link alt" target="_blank" rel="noopener">
+            @DeNovoLabs &nbsp;→
+          </a>
+        </div>
+      </div>
 
       <div class="proj-card feature">
         <p class="proj-tag">Live · Shipping Now</p>
@@ -1141,10 +1238,75 @@
     <p class="cc-sub reveal">
       I build what others can only see in their heads. Cross-functional teams,
       regulated timelines, complex stakeholder landscapes. I've navigated all of it
-      and have the numbers to prove it. If you have a big idea in life sciences
-      or health tech and need someone to make it real, I want to hear from you.
+      and have the numbers to prove it. Most of that goes into DeNovoLabs now, and the week
+      around it is deliberately not full. There are three separate reasons to write to me,
+      and I read all of them.
     </p>
+    <div class="cc-lanes reveal">
+
+      <div class="lane">
+        <p class="lane-num">// 01</p>
+        <p class="lane-title b">Hire me for the work</p>
+        <p class="lane-desc">
+          8+ years taking regulated products from the bench to the market. I'm open to a
+          full-time seat, and I take on smaller engagements alongside DeNovoLabs.
+        </p>
+        <ul class="lane-list">
+          <li>Full-time: Director or Head of Program Management</li>
+          <li>Fractional COO or program leadership</li>
+          <li>Advisory and board seats at early-stage companies</li>
+          <li>Scoped projects: a launch, a submission, an integration</li>
+        </ul>
+        <a href="mailto:apoorva1901@gmail.com?subject=Working%20together" class="lane-cta">
+          Tell me what you need &nbsp;→
+        </a>
+      </div>
+
+      <div class="lane">
+        <p class="lane-num">// 02</p>
+        <p class="lane-title v">Back DeNovoLabs</p>
+        <p class="lane-desc">
+          Enzymes that don't exist in nature, aimed at PFAS first. Computation is done, the
+          wet lab is running. Partnerships come through me, and I'd rather talk early than
+          once everything is decided.
+        </p>
+        <ul class="lane-list">
+          <li>Investors backing deeptech and synthetic biology</li>
+          <li>Grant bodies funding persistent pollutant work</li>
+          <li>Wet-lab partners: expression, assay, analytical chemistry</li>
+          <li>Anyone sitting on a PFAS problem of their own</li>
+        </ul>
+        <a href="mailto:apoorva1901@gmail.com?subject=DeNovoLabs" class="lane-cta">
+          Start the conversation &nbsp;→
+        </a>
+        <p class="lane-sub">
+          Or read the whole thesis at
+          <a href="https://denovolabs.eu/" target="_blank" rel="noopener">denovolabs.eu</a>.
+        </p>
+      </div>
+
+      <div class="lane">
+        <p class="lane-num">// 03</p>
+        <p class="lane-title r">Put me on the mic</p>
+        <p class="lane-desc">
+          I did the work for years and told almost nobody. That's changing. If you run a
+          webinar, a podcast, a panel or a channel and you want someone who has actually
+          shipped the thing, I'll show up prepared.
+        </p>
+        <ul class="lane-list">
+          <li>Getting a regulated product from lab bench to launch</li>
+          <li>Going from big-company program manager to startup COO</li>
+          <li>What a non-engineer can build with AI agents</li>
+          <li>Running operations at a deeptech startup from zero</li>
+        </ul>
+        <a href="mailto:apoorva1901@gmail.com?subject=Webinar%20or%20content" class="lane-cta">
+          Pitch me a topic &nbsp;→
+        </a>
+      </div>
+    </div>
+
     <div class="cc-tags reveal">
+      <span class="cc-tag">Deeptech</span>
       <span class="cc-tag">Biotech</span>
       <span class="cc-tag">Medical Device</span>
       <span class="cc-tag">Health Tech</span>
@@ -1158,6 +1320,7 @@
       <p class="cc-item">Cross-functional &amp; cross-regional team leadership</p>
       <p class="cc-item">Regulatory strategy: FDA, ISO, REACH, EUA</p>
       <p class="cc-item">OEM partnerships and M&amp;A integration experience</p>
+      <p class="cc-item">C-level operating experience at an early-stage deeptech company</p>
       <p class="cc-item">The operational discipline to outlast the chaos</p>
     </div>
     <a href="mailto:apoorva1901@gmail.com" class="cc-cta reveal">
@@ -1182,6 +1345,10 @@
         <span class="conn-link-label">Instagram</span>
         @aricha.apoorva
       </a>
+      <a href="https://denovolabs.eu/" class="conn-link" target="_blank">
+        <span class="conn-link-label">COO</span>
+        DeNovoLabs
+      </a>
       <a href="https://great-takes.up.railway.app/" class="conn-link" target="_blank">
         <span class="conn-link-label">Building</span>
         Great Takes
@@ -1199,7 +1366,7 @@
   <div class="footer-bar">
     <span>© 2026 Apoorva Sooranahalli</span>
     <span class="footer-inf">∞</span>
-    <span>Da Nang, Vietnam &nbsp;·&nbsp; Built with intent</span>
+    <span>Hoi An, Vietnam &nbsp;·&nbsp; Built with intent</span>
   </div>
 </section>
 
